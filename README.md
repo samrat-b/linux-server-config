@@ -1,7 +1,8 @@
 # Project Details
--	….
--	….
-
+-	As part of this project you would create your own Linux Server Instance, secure the server, install required packages and perform required configurations. Deploy a web application at the configured server Instance. The deployed web application should be accessible via a URL.
+## Basic Info:
+-   IP Address: 13.233.190.226
+-   App URL: http://ec2-13-233-190-226.ap-south-1.compute.amazonaws.com/
 ## Create a new Linux server instance
 -   Login to [Amazon Lightsail](https://lightsail.aws.amazon.com/)
 -	Under the 'Select a blueprint' chose 'OS Only'
@@ -38,7 +39,7 @@
 -   Remove port 22 from sshd_config file:
     -   In next few steps, we will configure Uncomplicated Firewall (UFW), and open firewall for port 2200
     -   After that we will remove port 22 from sshd_config file as well as disable it in UFW
-    -   This way ensures that we do not lock ourself out of ubuntu server
+    -   This way ensures that we do not lock ourselves out of ubuntu server
 
 ## Configure the Uncomplicated Firewall (UFW) to only allow incoming connections for SSH (port 2200), HTTP (port 80), and NTP (port 123)
 -   Check UFW status (default UFW status is inactive)
@@ -111,7 +112,7 @@
 ## Prepare to deploy the Web Application at Server
 -   Login as grader
     -   `ssh grader@-p 2200 -i ~/.ssh/my_key.rsa`
--   Disbale SSH for root
+-   Disable SSH for root
     -   `sudo nano /etc/ssh/sshd_config`
     -   Change "PermitRootLogin" to "no"
     -   Save and Exit
