@@ -223,11 +223,11 @@
     -   `python /var/www/catalog/catalog/dbsetup.py` 
     -   `python /var/www/catalog/catalog/create_categories.py`           
 -   Update Authorized Origins and Authorized redirect URIs
-    -   Go to Google Developer Console and add `ec2-13-235-16-45.ap-south-1.compute.amazonaws.com` under 'Authorized JavaScript origins' and under 'Authorized redirect URIs'
+    -   Go to Google Developer Console and add `ec2-13-233-190-226.ap-south-1.compute.amazonaws.com` under 'Authorized JavaScript origins' and under 'Authorized redirect URIs'
     -   Update `/var/www/catalog/catalog/client_secrets.json` at Server
 -   Run the deployed application:
     -   `sudo service apache2 restart`
-    -   Enter `ec2-13-235-16-45.ap-south-1.compute.amazonaws.com` in Web Browser
+    -   Enter `ec2-13-233-190-226.ap-south-1.compute.amazonaws.com` in Web Browser
 
 ### References:
 https://askubuntu.com/questions/138423/how-do-i-change-my-timezone-to-utc-gmt/138442; https://github.com/iliketomatoes/linux_server_configuration; https://github.com/chuanqin3/udacity-linux-configuration
